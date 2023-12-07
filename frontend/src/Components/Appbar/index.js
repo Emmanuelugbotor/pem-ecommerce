@@ -1,6 +1,5 @@
 import { useMediaQuery } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
-import React from 'react'
 import AppbarMobile from './AppbarMobile'
 import AppbarDesktop from './AppbarDesktop'
 
