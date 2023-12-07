@@ -16,16 +16,7 @@ function AppbarMobile({ matches }) {
       <IconButton>
           <SearchIcon/>
       </IconButton>
-          {/* <MyList type='row'>
-              <ListItemText primary='Home'/>
-              <ListItemText primary='Categories'/>
-              <ListItemText primary='Products'/>
-              <ListItemText primary='Contact Us'/>
-              <ListItemButton>
-                  <ListItemIcon><SearchIcon/></ListItemIcon>
-              </ListItemButton>
-          </MyList>
-          <Actions/> */}
+          
           <Actions matches={matches}/>
         </AppbarContainer>
   )
