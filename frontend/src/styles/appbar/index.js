@@ -4,7 +4,7 @@ import { Box } from "@mui/system"
 import { Colors } from "../theme"
 import '@fontsource/montez'
 
-// Container
+
 export const AppbarContainer = styled(Box)(() => ({
     display: 'flex',
     marginTop: 4,
@@ -20,10 +20,9 @@ export const AppbarHeader = styled(Typography)(() => ({
     fontSize: "4em",
     fontFamily: '"Montez", "cursive"',
     color: Colors.secondary,
-    // "&:hover": {
-    //   animation: `${textPopUpTop} 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both`,
-    // },
 }))
+
+
 
 export const MyList = styled(List)(({ type }) => ({
     display: type === "row" ? "flex" : "block",
@@ -43,7 +42,8 @@ export const ActionsIconsContainerMobile = styled(Box)(() => ({
     zIndex: 99,  
     borderTop: `1px solid ${Colors.border}`
   }))
+
   
-  export const ActionsIconsContainerDesktop = styled(Box)(() => ({
+export const ActionsIconsContainerDesktop = styled(Box)(() => ({
     flexGrow: 0,
-  }))
+}))
