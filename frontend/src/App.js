@@ -3,8 +3,11 @@ import { Button, Container } from '@mui/material'
 import { useEffect } from 'react'
 import theme from './styles/theme'
 
-// COMPONENETS
+// COMPONENTS
 import Appbar from './Components/Appbar'
+import Banner from './Components/Banner'
+import Promotions from './Components/Promotions'
+import Products from './Components/Products/'
 
 function App() {
 
@@ -15,16 +18,12 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Container maxWidth='xl' sx={{background: '#fff'}}>
+        
         <Appbar/>
-        {/* Appbar
-            Banner
-            Promotions
-            Title
-            Products
-            Footer
-            Searchbox
-            Appdrawer */}
-        <Button variant='contained'>Test</Button>
+        <Banner/>
+        <Promotions/>
+        <Products/>
+
       </Container>
     </ThemeProvider>
   );
