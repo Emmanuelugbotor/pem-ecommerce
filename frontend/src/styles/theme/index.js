@@ -1,11 +1,12 @@
 import { createTheme } from "@mui/material/styles";
-// import { darken, lighten } from "polished";
+import { lighten } from "polished";
 
 export const DrawerWidth = 250;
 
 export const Colors = {
-  primary: "#5f2c3e",
-  secondary: "#d1adcc",
+  primary: "#161A30",
+  secondary: "#31304D",
+  tertiary: "#B6BBC4",
   success: "#4CAF50",
   info: "#00a2ff",
   danger: "#FF5722",
@@ -47,6 +48,27 @@ const theme = createTheme({
         disableElevation: true,
       },
     },
+
+    MyShopButton: {
+      styleOverrides: {
+        root: {
+          color: Colors.white,
+        },
+        primary: {
+          background: Colors.primary,
+          "&:hover": {
+            background: lighten(0.05, Colors.primary),
+          },
+        },
+        secondary: {
+          background: `${Colors.secondary}`,
+          "&:hover": {
+            background: lighten(0.05, Colors.secondary),
+          },
+        },
+      },
+    },
+
     MuiTooltip: {
       defaultProps: {
         arrow: true,
@@ -60,6 +82,7 @@ const theme = createTheme({
         },
       },
     },
+
     MuiDrawer: {
       styleOverrides: {
         paper: {
@@ -67,36 +90,18 @@ const theme = createTheme({
           background: Colors.primary,
           color: Colors.secondary,
           borderRadius: '0px 100px 0px 0px',
-          borderRight: `1px solid ${Colors.primary}`
+          borderRight: `1px solid ${Colors.secondary}`
         }
       }
     },
-    // MuiDivider: {
-    //   styleOverrides: {
-    //     root: {
-    //       borderColor: lighten(0.2, Colors.primary)
-    //     }
-    //   }
-    // },
-    MyShopButton: {
+    MuiDivider: {
       styleOverrides: {
         root: {
-          color: Colors.white,
-        },
-        // primary: {
-        //   background: Colors.primary,
-        //   "&:hover": {
-        //     background: lighten(0.05, Colors.primary),
-        //   },
-        // },
-        // secondary: {
-        //   background: `${Colors.secondary}`,
-        //   "&:hover": {
-        //     background: lighten(0.05, Colors.primary),
-        //   },
-        // },
-      },
+          borderColor: lighten(0.2, Colors.primary)
+        }
+      }
     },
+    
   },
 });
 
