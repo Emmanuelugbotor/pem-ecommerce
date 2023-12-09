@@ -2,6 +2,7 @@ import { useTheme } from "@mui/material/styles"
 import { Container, Grid, useMediaQuery } from "@mui/material"
 import { products } from "../../Data"
 import SingleProduct from "./SingleProduct"
+import SingleProductDesktop from "./SingleProductDesktop"
 
 function Products() {
   const theme = useTheme()
@@ -18,7 +19,11 @@ function Products() {
       flexDirection='column' 
       alignItems='center'
     >
-      <SingleProduct product={product} matches={matches}/>
+      {matches ? (
+        <SingleProduct product={product} matches={matches}/>
+      ) : (
+        <SingleProductDesktop product={product} matches={matches}/>
+      )}
     </Grid>
   ))
 
