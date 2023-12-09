@@ -8,9 +8,7 @@ import { Colors } from "../../styles/theme"
 
 function Actions({ matches }) {
     const Component = matches ? ActionsIconsContainerMobile : ActionsIconsContainerDesktop
-    const listItemTextStyle = {
-        fontFamily: 'Your Desired Font Family',
-      }
+    
     return (
         <Component>
             <MyList type='row'>
@@ -19,7 +17,7 @@ function Actions({ matches }) {
                         sx={{
                             display: 'flex', 
                             justifyContent: 'center',
-                            color: matches && Colors.secondary
+                            color: matches
                         }}
                     >
                         <ShoppingCartIcon/>
@@ -33,7 +31,7 @@ function Actions({ matches }) {
                         sx={{
                             display: 'flex', 
                             justifyContent: 'center',
-                            color: matches && Colors.secondary
+                            color: matches
                         }}
                     >
                         <FavoriteIcon/>
@@ -47,7 +45,7 @@ function Actions({ matches }) {
                         sx={{
                             display: 'flex', 
                             justifyContent: 'center',
-                            color: matches && Colors.secondary
+                            color: matches
                         }}
                     >
                         <PersonIcon/>
