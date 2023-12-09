@@ -1,19 +1,18 @@
-import { Typography, useMediaQuery } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
-import { BannerContainer, BannerContent, BannerDescription, BannerImage, BannerTitle } from '../../styles/banner'
+import { Typography } from '@mui/material'
+import { BannerContainer, BannerContent, BannerDescription, BannerImage, BannerShopButton, BannerTitle } from '../../styles/banner'
 
 function Banner() {
-    const theme = useTheme()
-    const matches = useMediaQuery(theme.breakpoints.down('md'))
 
     return (
       <BannerContainer>
 
         <BannerImage src='/Images/banner/img.png'/>
-        <BannerContent>
 
+        <BannerContent>
           <Typography variant='h6'>Our Collections</Typography>
+
           <BannerTitle variant='h2'>New Clothes</BannerTitle>
+
           <BannerDescription variant='subtitle'>
             Lorem Ipsum has been the industry's standard dummy 
             text ever since the 1500s, when an unknown printer 
@@ -23,6 +22,9 @@ function Banner() {
             essentially unchanged.
           </BannerDescription>
 
+          <BannerShopButton color='primary'>
+            Shop Now
+          </BannerShopButton>
         </BannerContent>
 
       </BannerContainer>
