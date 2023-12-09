@@ -1,4 +1,4 @@
-import { ListItemButton, ListItemIcon, ListItemText, ListItem } from "@mui/material"
+import { ListItemButton, ListItemIcon, ListItemText } from "@mui/material"
 import { AppbarContainer, AppbarHeader, MyList } from "../../styles/appbar"
 import SearchIcon from "@mui/icons-material/Search"
 import Actions from "./Actions"
@@ -9,6 +9,9 @@ function AppbarDesktop({ matches }) {
     const listItemTextStyle = {
         fontFamily: '"Noto Sans" "cursive"',
         fontWeight: 600,
+        '&:hover': {
+            cursor: 'pointer',
+        }
     }
 
     return (
@@ -16,9 +19,9 @@ function AppbarDesktop({ matches }) {
             <AppbarHeader>Male Clothings</AppbarHeader>
                 <MyList type='row'>
                     <ListItemText disableTypography sx={listItemTextStyle} primary='Home'/>
-                    <ListItemText primary='Categories'/>
-                    <ListItemText primary='Products'/>
-                    <ListItemText primary='Contact Us'/>
+                    <ListItemText disableTypography sx={listItemTextStyle} primary='Categories'/>
+                    <ListItemText disableTypography sx={listItemTextStyle} primary='Products'/>
+                    <ListItemText disableTypography sx={listItemTextStyle} primary='Contact Us'/>
                     <ListItemButton>
                         <ListItemIcon><SearchIcon/></ListItemIcon>
                     </ListItemButton>
