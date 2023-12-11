@@ -11,6 +11,7 @@ import Products from './Components/Products/'
 import Footer from './Components/Footer'
 import AppDrawer from './Components/AppDrawer'
 import { UIProvider } from './Context/ui'
+import SearchBox from './Components/Search'
 
 function App() {
 
@@ -40,6 +41,9 @@ function App() {
           <Footer/>
 
           <AppDrawer/>
+
+          <SearchBox/>
+        
         </UIProvider>
         
       </Container>
