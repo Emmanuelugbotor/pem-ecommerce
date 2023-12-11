@@ -21,7 +21,6 @@ function AppDrawer() {
       {drawerOpen && (
         <DrawerCloseButton onClick={() => setDrawerOpen(false)}>
           <CloseIcon
-            className='testing'
             sx={{
               fontSize: "2.5rem",
               color: lighten(0.09, Colors.secondary),
