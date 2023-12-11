@@ -3,6 +3,7 @@ import { AppbarContainer, AppbarHeader, MyList } from "../../styles/appbar"
 import SearchIcon from "@mui/icons-material/Search"
 import Actions from "./Actions"
 import "@fontsource/noto-sans"
+import { useUIContext } from "../../Context/ui"
 
 function AppbarDesktop({ matches }) {
 
@@ -14,6 +15,8 @@ function AppbarDesktop({ matches }) {
         }
     }
 
+    const { setShowSearchBox } = useUIContext()
+
     return (
         <AppbarContainer>
             <AppbarHeader>Male Clothings</AppbarHeader>
@@ -23,7 +26,7 @@ function AppbarDesktop({ matches }) {
                     <ListItemText disableTypography sx={listItemTextStyle} primary='Products'/>
                     <ListItemText disableTypography sx={listItemTextStyle} primary='Contact Us'/>
                     <ListItemButton>
-                        <ListItemIcon><SearchIcon/></ListItemIcon>
+                        <ListItemIcon><SearchIcon onClick={() => setShowSearchBox(true) }/></ListItemIcon>
                     </ListItemButton>
                 </MyList>
                 <Actions matches={matches}/>
