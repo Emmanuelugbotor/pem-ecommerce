@@ -9,7 +9,7 @@ import useDialogModal from "../../Hooks/useDialogModal"
 import ProductDetail from "../ProductDetail"
 
 
-function SingleProductDesktop({product, matches}) {
+function SingleProductDesktop({product, isMobile}) {
 
     const [showOptions, setShowOptions] = useState(false)
 
@@ -52,7 +52,7 @@ function SingleProductDesktop({product, matches}) {
 
         </Product>  
 
-        <ProductMeta product={product} matches={matches}/>
+        <ProductMeta product={product} isMobile={isMobile}/>
         <ProductDetailDialog product={product} />
         </>
     )
