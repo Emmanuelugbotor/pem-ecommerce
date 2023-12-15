@@ -7,7 +7,7 @@ import FitScreenIcon from "@mui/icons-material/FitScreen"
 import useDialogModal from "../../Hooks/useDialogModal"
 import ProductDetail from "../ProductDetail"
 
-function SingleProduct({product, matches}) {
+function SingleProduct({product, isMobile}) {
 
     const [ProductDetailDialog, showProductDetailDialog, closeProductDetailDialog] = useDialogModal(ProductDetail)
 
@@ -16,7 +16,7 @@ function SingleProduct({product, matches}) {
         <Product>
             <ProductImage src={product.image}/>
 
-            <ProductMeta product={product} matches={matches}/>
+            <ProductMeta product={product} isMobile={isMobile}/>
 
             <ProductActionsWrapper>
                 <Stack direction='row'>
