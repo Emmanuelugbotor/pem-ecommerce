@@ -3,7 +3,7 @@ import { AppbarContainer, AppbarHeader, MyList } from "../../styles/appbar"
 import SearchIcon from "@mui/icons-material/Search"
 import Actions from "./Actions"
 import "@fontsource/noto-sans"
-import { useUIContext } from "../../Context/ui"
+import { useUIContext } from "../../Contexts/ui"
 
 function AppbarDesktop({ matches }) {
 
