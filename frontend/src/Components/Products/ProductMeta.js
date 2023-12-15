@@ -2,13 +2,14 @@ import { Typography } from "@mui/material"
 import { ProductMetaWrapper } from "../../styles/products"
 
 
-function ProductMeta({ product, matches }) {
+
+function ProductMeta({ product, isMobile }) {
     return (
         <ProductMetaWrapper>
-            <Typography variant={matches ? 'h6' : 'h5'} lineHeight={2}>
+            <Typography variant={isMobile ? 'h6' : 'h5'} lineHeight={2}>
                 {product.name}
             </Typography>
-            <Typography variant={matches ? 'caption' : 'body1'}>
+            <Typography variant={isMobile ? 'caption' : 'body1'}>
                 ${product.price}
             </Typography>
         </ProductMetaWrapper>
