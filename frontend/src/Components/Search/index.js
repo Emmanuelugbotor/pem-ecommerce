@@ -1,5 +1,5 @@
 import React from 'react'
-import { useUIContext } from '../../Context/ui'
+import { useUIContext } from '../../Contexts/ui'
 import { IconButton, Slide } from '@mui/material'
 import { SearchBoxContainer, SearchField } from '../../styles/search'
 import CloseIcon from "@mui/icons-material/Close"
