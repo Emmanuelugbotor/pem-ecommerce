@@ -3,7 +3,6 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import PersonIcon from '@mui/icons-material/Person'
 import { ActionsIconsContainerMobile, ActionsIconsContainerDesktop, MyList } from '../../styles/appbar'
-import { Colors } from "../../styles/theme"
 
 
 function Actions({ matches }) {
