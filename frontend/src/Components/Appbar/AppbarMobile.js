@@ -3,7 +3,7 @@ import MenuIcon from '@mui/icons-material/Menu'
 import { AppbarContainer, AppbarHeader } from "../../styles/appbar"
 import SearchIcon from "@mui/icons-material/Search"
 import Actions from "./Actions"
-import { useUIContext } from '../../Context/ui'
+import { useUIContext } from '../../Contexts/ui'
 
 function AppbarMobile({ matches }) {
 
