@@ -2,7 +2,7 @@ import { styled } from '@mui/system'
 import { lighten } from "polished"
 import CloseIcon from "@mui/icons-material/Close"
 import { Divider, Drawer, List, ListItemButton, ListItemText } from '@mui/material'
-import { useUIContext } from '../../Context/ui'
+import { useUIContext } from '../../Contexts/ui'
 import { DrawerCloseButton } from '../../styles/appbar'
 import { Colors } from "../../styles/theme"
 
