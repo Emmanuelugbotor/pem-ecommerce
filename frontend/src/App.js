@@ -10,8 +10,12 @@ import Promotions from './Components/Promotions'
 import Products from './Components/Products/'
 import Footer from './Components/Footer'
 import AppDrawer from './Components/AppDrawer'
-import { UIProvider } from './Contexts/ui'
 import SearchBox from './Components/Search'
+
+// CONTEXTS
+import { UIProvider } from './Contexts/ui'
+import { CartContextProvider } from './Contexts/UpdateCart'
+
 
 function App() {
 
@@ -24,26 +28,29 @@ function App() {
       <Container maxWidth='xl' sx={{background: '#fff'}}>
 
         <UIProvider>
-          <Appbar/>
+          <CartContextProvider>
+            <Appbar/>
 
-          <Banner/>
+              
+            <Banner/>
 
-          <Promotions/>
+            <Promotions/>
 
-          <Box display='flex' justifyContent='center' sx={{ p:4 }}>
-            <Typography variant='h4'>
-              Product Features
-            </Typography>
-          </Box>
+            <Box display='flex' justifyContent='center' sx={{ p:4 }}>
+              <Typography variant='h4' sx={{fontFamily: "'Poppins', 'sans-serif'"}}>
+                Product Features
+              </Typography>
+            </Box>
 
-          <Products/>
+            <Products/>
 
-          <Footer/>
+            <Footer/>
 
-          <AppDrawer/>
+            <AppDrawer/>
 
-          <SearchBox/>
+            <SearchBox/>
         
+          </CartContextProvider>
         </UIProvider>
         
       </Container>
