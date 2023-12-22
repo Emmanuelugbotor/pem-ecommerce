@@ -1,4 +1,4 @@
-import { IconButton, List, Typography } from "@mui/material"
+import { IconButton, List, ListItemText, Typography } from "@mui/material"
 import { styled } from "@mui/material/styles"
 import { Box } from "@mui/system"
 import { Colors } from "../theme"
@@ -7,27 +7,40 @@ import '@fontsource/montez'
 
 export const AppbarContainer = styled(Box)(() => ({
     display: 'flex',
-    marginTop: 4,
+    marginTop: 0,
+    marginBottom: 10,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: '2px 8px'
+    // padding: '2px 8px',
+    
 })) 
 
 
 export const AppbarHeader = styled(Typography)(() => ({
-    padding: "4px",
+    padding: "0 20px",
     flexGrow: 1,
-    fontSize: "4em",
-    fontFamily: '"Montez", "cursive"',
-    color: Colors.secondary,
+    fontSize: "2.7rem",
+    fontFamily: "'Montez', 'cursive'",
+    color: Colors.secondary
 }))
 
 
 export const MyList = styled(List)(({ type }) => ({
     display: type === "row" ? "flex" : "block",
     flexGrow: 3,
+    marginLeft: 'auto',
     justifyContent: "center",
     alignItems: "center",
+    color: Colors.dark
+}))
+
+
+export const ListText = styled(ListItemText)(() => ({
+    fontFamily: '"Poppins" "sans-serif"!important',
+    fontWeight: 600,
+    '&:hover': {
+        cursor: 'pointer',
+    }
 }))
 
 
@@ -46,6 +59,7 @@ export const ActionsIconsContainerMobile = styled(Box)(() => ({
   
 export const ActionsIconsContainerDesktop = styled(Box)(() => ({
     flexGrow: 0,
+    paddingLeft: '200px'
 }))
 
 
