@@ -9,6 +9,7 @@ export const Product = styled(Box)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center",
   flexDirection: "column",
+  fontFamily: "'Poppins', 'sans-serif'",
   [theme.breakpoints.up("md")]: {
     position: "relative",
   },
