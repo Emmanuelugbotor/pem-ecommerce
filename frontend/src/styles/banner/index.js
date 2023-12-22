@@ -32,7 +32,7 @@ export const BannerContent = styled(Box)(() => ({
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
-  fontFamily: '"Noto Sans" "cursive"',
+  fontFamily: "'Poppins', 'sans-serif'",
   fontWeight: 600,
   maxWidth: 420,
   padding: "30px",
@@ -41,9 +41,10 @@ export const BannerContent = styled(Box)(() => ({
 export const BannerTitle = styled(Typography)(({ matches, theme }) => ({
   lineHeight: 1.5,
   fontSize: "72px",
-  fontFamily: "Noto Sans",
+  fontFamily: "'Poppins', 'sans-serif'",
   fontWeight: 400,
   marginBottom: "20px",
+  fontSize: '54px', 
   [theme.breakpoints.down('sm')]: {
     fontSize: '42px',    
   }
@@ -53,7 +54,7 @@ export const BannerDescription = styled(Typography)(({ theme }) => ({
   lineHeight: 1.25,
   letterSpacing: 1.25,
   marginBottom: "3em",
-  fontFamily: "Noto Sans",
+  fontFamily: "'Poppins', 'sans-serif'",
   fontWeight: 600,
   [theme.breakpoints.down("md")]: {
     lineHeight: 1.15,
