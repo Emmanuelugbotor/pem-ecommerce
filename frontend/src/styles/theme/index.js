@@ -8,6 +8,7 @@ export const Colors = {
   secondary: "#31304D",
   tertiary: "#B6BBC4",
   success: "#4CAF50",
+  
   info: "#00a2ff",
   danger: "#FF5722",
   warning: "#FFC107",
@@ -38,6 +39,16 @@ const theme = createTheme({
     },
     secondary: {
       main: Colors.secondary,
+    },
+  },
+
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 840,
+      md: 1032,
+      lg: 1312,
+      xl: 1365,
     },
   },
 
