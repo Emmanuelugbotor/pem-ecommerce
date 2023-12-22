@@ -2,7 +2,7 @@ import { Box, TextField } from "@mui/material"
 import { styled } from "@mui/system"
 import { Colors } from "../theme"
 
-export const SearchBoxContainer = styled(Box)(({ theme }) => ({
+export const SearchBoxContainer = styled(Box)(() => ({
     position: 'absolute',
     top: 0,
     left: 0,
